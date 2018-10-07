@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     background-color: #000;
     color: #F0F0F0;
-    width: 100%;
+    max-width: 100%;
     z-index: 1;
 }
 
