@@ -1,0 +1,7 @@
+{
+    "editor.wordWrap": "on",
+    "materialTheme.autoApplyIcons": true,
+    "editor.fontFamily": "lato",
+    "editor.fontSize": 16,
+    "open-in-browser.default": "Chrome"
+}

@@ -1,0 +1,30 @@
+body {
+    margin-top: 10px;
+    background-color: #F0F0F0;
+    font-family: 'Lato';
+    font-size: 18px;
+}
+#container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#header {
+    max-width:150px;
+}
+
+.portrait {
+    width: 100%;
+    /* border-radius: 50%;
+    float: left; */
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 0px 0px 5px;
+}
+
+.sub-name {
+    font-size: 1em;
+    margin: 5px 0px;
+}
