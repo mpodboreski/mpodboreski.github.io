@@ -14,28 +14,37 @@ body {
       height: 175px;
   }
 
-header {
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    position: fixed;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    /* position: fixed;  */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #000;
     color: #F0F0F0;
-    max-width: 100%;
+    /* width: 100%; */
     z-index: 1;
+}
+
+.branding {
+    display: flex;
+    width: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
 .portrait {
     width: 100px;
-    flex-flow: start;
-    flex: 1;
 }
 
-.brand {
-    flex: 5;
-}
+
 
 .name {
     font-size: 1.5em;
@@ -47,31 +56,61 @@ header {
     margin: 0px;
 }
 
-nav {
+.nav {
     font-size: 1em;
-    padding: 0px 20px;
+    width: 50%;
 }
 
-nav ul {
-    display: inline-flex;
-    flex-wrap: wrap;
+.nav ul {
+    display: flex;
     list-style-type: none;
+
 }
 
-nav li a {
-    padding-left: 25px;
+.nav li {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav li a {
     color: #F0F0F0;
     text-decoration: none;
 }
 
-nav li a:hover {
+.nav li a:hover {
     opacity: .5;
 }
 
 #content {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width:  60%;
     position: relative;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
+
+@media screen and  (max-width: 800px) {
+    .flex-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        /* position: fixed;  */
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: rgb(95, 14, 14);
+        color: #F0F0F0;
+        /* width: 100%; */
+        z-index: 1;
+    }
+
+   }
