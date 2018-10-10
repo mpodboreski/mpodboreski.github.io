@@ -51,9 +51,9 @@ header {
 } */
 
 .portrait {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
     height: 80px;
     width: 80px;
 }
@@ -222,7 +222,7 @@ nav li a:hover {
     }
 
     .nav-bar-links {
-        display: flex;]
+        display: flex;
         flex-direction: column;
     }
 
