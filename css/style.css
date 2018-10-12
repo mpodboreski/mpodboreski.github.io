@@ -156,6 +156,7 @@ nav li a:hover {
     min-height: 55vh;
     padding-top: 45vh;
     background-color: #ccc;
+    width: 100%;
 }
 
 .intro {
@@ -164,7 +165,7 @@ nav li a:hover {
 
 /* Projects Section */
 
-.project-container {
+/* .project-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -175,11 +176,20 @@ nav li a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+} */
+
+.project-container {
+    display: grid;
+    /* grid-template-rows: auto auto; */
+    grid-gap: 25px 0px;;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
 }
 
 .project-tile {
     min-width: 0;
-   margin: 25px;
    transition-duration: 1s;
 }
 
@@ -188,12 +198,9 @@ nav li a:hover {
 }
 
 .project-tile img {
-    width: 350px;
-    max-width: 100%; 
-    min-height: 233px; 
-    padding: 0px;
-    margin: 0px;
+    max-width: 100%;
     display: block;
+    height: auto;
   }
 
 .project-title {
