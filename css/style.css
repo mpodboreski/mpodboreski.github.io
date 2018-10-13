@@ -31,6 +31,13 @@ p {
     padding-bottom: 30px;
 } 
 
+.spacer-header-header {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+}
+
 .spacer-header {
     display: flex;
     flex-direction: row;
@@ -322,6 +329,13 @@ nav li a:hover {
 
     /* Header & Navigation */
 
+    .spacer-header-header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+    }
+
     .nav-bar-items,
     nav {
         display: -webkit-box;
@@ -384,7 +398,7 @@ nav li a:hover {
     }
 
     .intro p {
-        padding: 0 25px 25px;;
+        padding: 0 25px 25px;
 
     }
   }
