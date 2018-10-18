@@ -379,6 +379,10 @@ nav li a:hover {
         opacity: .5;
     }
 
+    .intro h1 {
+        font-size: 3em;
+    }
+
     .intro p {
         padding: 0 25px 25px;
 
