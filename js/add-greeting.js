@@ -6,11 +6,13 @@ var hourNow = today.getHours(); // Find the current hour
 var greeting;
 
 //Display the appropriate greeting based on the current time
-if (hourNow > 18) {
+if (hourNow > 18 || hourNow < 6) {
+    greeting = 'Good night!';
+} else if (hourNow > 15) {
     greeting = 'Good evening!';
 } else if (hourNow > 12) {
     greeting = 'Good afternoon!';
-} else if (hourNow > 0) {
+} else if (hourNow > 6) {
     greeting = 'Good Morning';
 } else {
     greeting = 'Hi!';
