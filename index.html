@@ -2,112 +2,128 @@
 
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
-        <title>Pittsburgh Front-end Web Design & Development &middot; Michael Podboreski</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
+    <title>Pittsburgh Front-end Web Design & Development &middot; Michael Podboreski</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
-            <header>
-                <!-- <div class="nav-bar"> -->
-                        <div>
-                        <img src="images/portrait.png"  alt="Pic of Michael Podboreski" class="portrait"/>
-                        </div>
-                        <div class="site-info">
-                            <h3>michaelPodboreski</h3>
-                            <h4>Front-End Web Design & Development</h4>
-                        </div>
-                        
-                        <div class="toggle-container">
-                        <div class="nav-bar-toggle">
-                            <i class="fas fa-bars"></i>
-                          </div>
-                        </div>
+<body>
+    <header>
+        <!-- <div class="nav-bar"> -->
+        <div>
+            <img src="images/portrait.png" alt="Pic of Michael Podboreski" class="portrait" />
+        </div>
+        <div class="site-info">
+            <h3>michaelPodboreski</h3>
+            <h4>Front-End Web Design & Development</h4>
+        </div>
 
-                    <nav>
-                            
-                        <ul class="nav-bar-items">
-                            <li class="nav-bar-links"><a href="#welcome-section">Home</a></li>
-                            <li class="nav-bar-links"><a href="#projects-anchor">Projects</a></li>
-                            <li class="nav-bar-links"><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-
-
-                    <!-- </div> -->
-            </header>
-
-            <div id="welcome-section">
-                <div class="intro">
-                <!-- <h1>Hi,</h1> -->
-                <script src="js/add-greeting.js"></script>
-                <p>I'm Michael Podboreski, a front-end web designer and developer. When I'm not improving my skills and creating solutions, you can find me training jiu jitsu, enjoying a coffee and other things. Take a look around, and let's connect.
-                </p>
-                <a class="btn" href="#projects-anchor">View Projects</a>
+        <div class="toggle-container">
+            <div class="nav-bar-toggle">
+                <i class="fas fa-bars"></i>
             </div>
-                </div>
+        </div>
 
-                <div class="spacer-header"></div>
+        <nav>
+
+            <ul class="nav-bar-items">
+                <li class="nav-bar-links"><a href="#welcome-section">Home</a></li>
+                <li class="nav-bar-links"><a href="#projects-anchor">Projects</a></li>
+                <li class="nav-bar-links"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- </div> -->
+    </header>
+
+    <div id="welcome-section">
+        <h1 id="greeting">Hi,</h1>
+        <div class="summary-text">
+            <p>I'm Michael Podboreski, a front-end web designer and developer. When I'm not improving my skills and
+                creating solutions, you can find me training jiu jitsu, enjoying a coffee and other things. Take a look
+                around, and let's connect.
+            </p>
+        </div>
+        <a class="btn" href="#projects-anchor">View Projects</a>
+    </div>
+
+    <div class="spacer-header"></div>
 
 
     <span class="anchor" id="projects-anchor"></span>
 
-            <section id="projects">
-                <div>
-                        <h3>Projects</h3>
-                        <p>The projects currently displayed are part of the freeCodeCamp curriculum. You can view my Responsive Web Design certificate <a href="https://www.freecodecamp.org/certification/mpodboreski/responsive-web-design" target="_blank">here.</a> I am also taking courses on Udemy and Skillshare for additional learning.
-                            </p>
-                </div>
-                <div class="project-container">
-                
-                        <figure class="project-tile">
-                            <a href="https://codepen.io/mpodboreski/full/JMBbvE" target="_blank"><img src="images/projects/tributePage.png" alt="Tribute Page" />
-                            <figcaption class="project-title">Tribute Page</figcaption></a>
-                        </figure>
-
-                        <figure class="project-tile">
-                                <a href="https://codepen.io/mpodboreski/full/bjKyPO" target="_blank"><img src="images/projects/sampleClientSurvey.png" alt="Survey Form" />
-                                <figcaption class="project-title">Survey Form</figcaption></a>
-                            </figure>
-
-                            <figure class="project-tile">
-                                    <a href="https://codepen.io/mpodboreski/full/wEGLKO" target="_blank"><img src="images/projects/productLandingPage.png" alt="Product Landing Page" />
-                                    <figcaption class="project-title">Product Landing Page</figcaption></a>
-                                </figure>
-
-                                <figure class="project-tile">
-                                        <a href="https://codepen.io/mpodboreski/full/PymEGg" target="_blank"><img src="images/projects/techDocPage.png" alt="Technical Doc Page" />
-                                        <figcaption class="project-title">Technical Doc Page</figcaption></a>
-                                    </figure>
-
+    <section id="projects">
+        <div>
+            <h3>Projects</h3>
+            <div class="summary-text">
+                <p>The projects currently displayed are part of the freeCodeCamp curriculum. You can view my Responsive
+                    Web Design certificate <a href="https://www.freecodecamp.org/certification/mpodboreski/responsive-web-design"
+                        target="_blank">here.</a> I am also taking courses on Udemy and Skillshare for additional
+                    learning.
+                </p>
             </div>
-            </section>
-              
-            <section id="contact">
-                <div>
-               <h3>Let's work together!</h3>
-            </div>
-               <div class="contact-container">
+        </div>
+        <div class="project-container">
 
-                <ul>
-                    <li><a href="https://github.com/mpodboreski" target="_blank">GitHub</a></li>
-                    <li><a href="https://codepen.io/mpodboreski" target="_blank">CodePen</a></li>
-                    <li><a href="https://twitter.com/mpodboreski" target="_blank">Twitter</a></li>
-                    <li><a href="https://linkedin.com/in/mpodboreski" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.freecodecamp.org/mpodboreski" target="_blank" id="profile-link">freeCodeCamp</a></li>
-                    <li><a href="mailto:m.podboreski@gmail.com">Email</a></li>
-                </ul>
+            <figure class="project-tile">
+                <a href="https://codepen.io/mpodboreski/full/JMBbvE" target="_blank"><img src="images/projects/tributePage.png"
+                        alt="Tribute Page" />
+                    <figcaption class="project-title">Tribute Page</figcaption>
+                </a>
+            </figure>
 
-            </div>
-            </section> 
-            <script src="js/toggle-bar.js"></script>
-    </body>
+            <figure class="project-tile">
+                <a href="https://codepen.io/mpodboreski/full/bjKyPO" target="_blank"><img src="images/projects/sampleClientSurvey.png"
+                        alt="Survey Form" />
+                    <figcaption class="project-title">Survey Form</figcaption>
+                </a>
+            </figure>
+
+            <figure class="project-tile">
+                <a href="https://codepen.io/mpodboreski/full/wEGLKO" target="_blank"><img src="images/projects/productLandingPage.png"
+                        alt="Product Landing Page" />
+                    <figcaption class="project-title">Product Landing Page</figcaption>
+                </a>
+            </figure>
+
+            <figure class="project-tile">
+                <a href="https://codepen.io/mpodboreski/full/PymEGg" target="_blank"><img src="images/projects/techDocPage.png"
+                        alt="Technical Doc Page" />
+                    <figcaption class="project-title">Technical Doc Page</figcaption>
+                </a>
+            </figure>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <h3>Let's work together!</h3>
+        </div>
+        <div class="contact-container">
+
+            <ul>
+                <li><a href="https://github.com/mpodboreski" target="_blank">GitHub</a></li>
+                <li><a href="https://codepen.io/mpodboreski" target="_blank">CodePen</a></li>
+                <li><a href="https://twitter.com/mpodboreski" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com/in/mpodboreski" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.freecodecamp.org/mpodboreski" target="_blank" id="profile-link">freeCodeCamp</a></li>
+                <li><a href="mailto:m.podboreski@gmail.com">Email</a></li>
+            </ul>
+
+        </div>
+    </section>
+    <script src="js/toggle-bar.js"></script>
+    <script src="js/add-greeting.js"></script>
+</body>
 
 </html>

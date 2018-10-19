@@ -18,4 +18,5 @@ if (hourNow > 18 || hourNow < 6) {
     greeting = 'Hi!';
 }
 
-document.write('<h1>' + greeting + '</h1>');
+var el = document.getElementById('greeting');
+el.textContent = greeting;
