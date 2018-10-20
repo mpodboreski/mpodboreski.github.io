@@ -4,7 +4,7 @@ body {
     font-family: 'Lato';
     font-size: 18px;
      color: #0a0a0a;
-    height: 100%;
+    /* height: 100%; */
 }
 
 * {
@@ -12,15 +12,26 @@ body {
     padding: 0;
   }
 
+  section {
+        padding: 40px 0 60px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    padding: 25px;
+    text-align: center;
+    line-height: 1;
+    text-transform: capitalize;
+  }
+
   h1 {
-    font-size: 2em;
-    padding-bottom: 15px;
+    font-size: 3em;
 }
 
 h3 {
-    text-align: center;
     font-size: 2em;
-    margin-bottom: 30px;
 }
 
 p {
@@ -32,13 +43,6 @@ p {
     max-width: 960px;
     margin: 0 auto; 
     text-align: center;
-}
-
-.spacer-header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 80px;
 }
 
 .anchor {
@@ -64,7 +68,6 @@ p {
 .btn:active {
     opacity: .5;
 }
-
 
   /* Header and navigation */
 
@@ -119,18 +122,22 @@ header {
     margin: 0;
 }
 
-header h3 {
+.site-info h3,
+.site-info h4 {
+    font-weight: 400;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1.5em;
+    text-transform: none;
     margin: 0;
+    padding: 0;
 }
 
-header h4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.site-info h3 {
+    letter-spacing: .5px;
+}
+
+.site-info h4 {
     font-size: 1em;
 }
 
@@ -198,19 +205,10 @@ nav li a:hover {
     text-align: center;
 }
 
-#greeting {
-    font-size: 3em;
-    line-height: 1;
-    text-transform: capitalize;
-}
-
-#projects {
-    margin-bottom: 100px;
-}
+/* Project Section */
 
 .project-container {
     display: grid;
-    /* grid-template-rows: auto auto; */
     grid-gap: 25px 0px;
     justify-items: center;
     max-width: 1140px;
@@ -235,7 +233,6 @@ nav li a:hover {
     display: block;
   }
 
-
 .project-title {
     color: #0a0a0a;
     background-color: #ccc;
@@ -243,11 +240,6 @@ nav li a:hover {
     padding: 15px 0 15px;
     font-weight: 900;
     border-top: 2px solid #F0F0F0;
-
-}
-
-.project-title h4 {
-    margin: 0;
 }
 
 .project-container a:link {
@@ -257,7 +249,6 @@ nav li a:hover {
 /* Contact Section */
 
 #contact {
-    padding: 30px 0px;
     width: 100%;
     background-color: #000;
 }
@@ -310,6 +301,10 @@ nav li a:hover {
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
+
+    .summary-text { 
+        max-width: 80%;
+    }
 
     /* Header & Navigation */
 
@@ -373,10 +368,6 @@ nav li a:hover {
     .nav-bar-toggle:hover {
         opacity: .5;
     }
-
-    .intro p {
-        padding: 0 25px 25px;
-    }
   }
 
 @media screen and  (max-width: 450px) {
@@ -384,8 +375,14 @@ nav li a:hover {
        width: 60px;
        height: 60px;
    }
+
     .site-info {
         font-size: .75em;
+    }
+
+    .site-info h3{
+        padding-bottom: 3px;
+        letter-spacing: 0px;
     }
 }
 
@@ -394,10 +391,10 @@ nav li a:hover {
         .portrait {
             display: none
         }
+
          .site-info {
              margin-left: 20px;
         }
-     
          }
      
    
