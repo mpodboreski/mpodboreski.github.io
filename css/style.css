@@ -60,6 +60,7 @@ p {
       padding: 10px 15px;
       color: #0a0a0a;
       font-size: 1.5em;
+      -webkit-transition: all .2s ease-out;
       transition: all .2s ease-out;
       display: inline-block;
   }
@@ -182,6 +183,7 @@ nav li {
 nav li a {
     color: #F0F0F0;
     text-decoration: none;
+    -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
 
@@ -198,10 +200,19 @@ nav li a:hover {
 #welcome-section {
     height: 100vh;
     background-color: #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin-top: 0px;
     padding-top: 0px;
@@ -219,9 +230,11 @@ nav li a:hover {
 }
 
 .project-tile {
-   transition-duration: 1s;
+   -webkit-transition-duration: 1s;
+           transition-duration: 1s;
    border: 2px solid #F0F0F0;
-   box-shadow: 1px 1px 4px #555;
+   -webkit-box-shadow: 1px 1px 4px #555;
+           box-shadow: 1px 1px 4px #555;
 }
 
 .project-tile:hover {
@@ -293,6 +306,7 @@ nav li a:hover {
 #contact li a {
     color: #F0F0F0;
     text-decoration: none;
+    -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
 
@@ -364,6 +378,7 @@ nav li a:hover {
         display: -ms-flexbox;
         display: flex;
         cursor: pointer;
+        -webkit-transition: all .2s ease-out;
         transition: all .2s ease-out;
     } 
 
