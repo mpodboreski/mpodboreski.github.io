@@ -164,30 +164,27 @@ nav {
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     width: 100%;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+        justify-content: space-around;
 }
 
 .nav-bar-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 20px 0;
   }
 
-nav li {
-    padding: 20px 0;
-}
-
-nav li a {
+.nav-bar-links a {
     color: #F0F0F0;
     text-decoration: none;
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
 
-nav li a:hover {
+.nav-bar-links a:hover {
     opacity: .5;
 }
 
