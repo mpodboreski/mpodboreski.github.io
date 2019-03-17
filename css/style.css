@@ -87,8 +87,29 @@ p {
     width: 80px;
 }
 
-.bg-dark {
-    background-color: #000 !important;
+.navbar-inverse {
+    background-color: #000;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+}
+
+.cta {
+    background-color: red;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #333;
+}
+
+.cta:hover {
+    background-color: #0a0a0a;
 }
 
 /* Welcome Section */
@@ -220,7 +241,7 @@ p {
 
     /* Header & Navigation */
 
-    .nav-bar-items,
+   /* .nav-bar-items,
     nav {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -281,7 +302,7 @@ p {
     .nav-bar-toggle:hover {
         opacity: .5;
     }
-  }
+  }*/
 
 @media screen and  (max-width: 450px) {
    .portrait {
