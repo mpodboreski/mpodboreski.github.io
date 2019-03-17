@@ -72,24 +72,6 @@ p {
 
   /* Header and navigation */
 
-header {
-    background-color: #000;
-    color: #F0F0F0;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    min-height: 60px;
-} 
-
 .portrait {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,91 +87,8 @@ header {
     width: 80px;
 }
 
-.site-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    opacity: .5;
-    -webkit-box-flex: 3;
-        -ms-flex: 3 3 auto;
-            flex: 3 3 auto;
-    margin: 0;
-}
-
-.site-info h3,
-.site-info h4 {
-    font-weight: 400;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-transform: none;
-    margin: 0;
-    padding: 0;
-}
-
-.site-info h3 {
-    letter-spacing: .5px;
-}
-
-.site-info h4 {
-    font-size: 1em;
-}
-
-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 1em;
-    -webkit-box-flex: 3;
-        -ms-flex: 3 3 50px;
-            flex: 3 3 50px;
-}
-
-.nav-bar-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    -webkit-box-pack: space-around;
-    -ms-flex-pack: space-around;
-        justify-content: space-around;
-}
-
-.nav-bar-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 20px 0;
-  }
-
-.nav-bar-links a {
-    color: #F0F0F0;
-    text-decoration: none;
-    -webkit-transition: all .2s ease-out;
-    transition: all .2s ease-out;
-}
-
-.nav-bar-links a:hover {
-    opacity: .5;
-}
-
-.nav-bar-toggle {
-    display: none;
+.bg-dark {
+    background-color: #000 !important;
 }
 
 /* Welcome Section */
